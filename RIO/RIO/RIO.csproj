@@ -173,6 +173,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Scripts\Plugins\bootstrap.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -209,7 +210,6 @@
     <Folder Include="Areas\TimeSheet\Models\" />
     <Folder Include="Areas\TimeSheet\Views\Shared\" />
     <Folder Include="Content\Images\" />
-    <Folder Include="Content\Scripts\Plugins\" />
     <Folder Include="Content\Styles\Source\" />
   </ItemGroup>
   <ItemGroup>
