@@ -161,6 +161,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\BugTracker\BugTrackerAreaRegistration.cs" />
+    <Compile Include="Areas\TimeSheet\TimeSheetAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -200,6 +202,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\BugTracker\Controllers\" />
+    <Folder Include="Areas\BugTracker\Models\" />
+    <Folder Include="Areas\BugTracker\Views\Shared\" />
+    <Folder Include="Areas\TimeSheet\Controllers\" />
+    <Folder Include="Areas\TimeSheet\Models\" />
+    <Folder Include="Areas\TimeSheet\Views\Shared\" />
     <Folder Include="Content\Images\" />
     <Folder Include="Content\Scripts\Plugins\" />
     <Folder Include="Content\Styles\Source\" />
@@ -249,6 +257,12 @@
     <Content Include="Content\Styles\Plugins\bootstrap\_utilities.scss" />
     <Content Include="Content\Styles\Plugins\bootstrap\_variables.scss" />
     <Content Include="Content\Styles\Plugins\bootstrap\_wells.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\TimeSheet\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\BugTracker\Views\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
