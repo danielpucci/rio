@@ -15,9 +15,6 @@ namespace RIO
             //Scripts:  Default
             bundles.Add(new ScriptBundle("~/Bundles/Scripts/Main").Include("~/Content/Scripts/main.js"));
 
-            //CSS: VENDOR
-            bundles.Add(new StyleBundle("~/Bundles/Styles/Plugins").Include("~/Content/Styles/Bootstrap/bootstrap.css"));
-
             //CSS: Default
             bundles.Add(new StyleBundle("~/Bundles/Styles/Main").Include("~/Content/Styles/main.css"));
            

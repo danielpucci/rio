@@ -1,14 +1,16 @@
 ﻿@model RIO.Models.LoginModel
 
 @{
-    ViewBag.Title = "Log in";
+    ViewBag.Title = "Entrar";
+    ViewBag.PageId = "login";
 }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-</hgroup>
+<!-- Logo -->
+<div class="login-logo">
+    <img src="@Url.Content("~/Content/Images/rio-logo-white.png")" alt="" />
+</div>
 
-<section id="loginForm">
+<section id="loginForm" style="display: none;">
 <h2>Use a local account to log in.</h2>
 @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
     @Html.AntiForgeryToken()
@@ -39,12 +41,3 @@
     </p>
 }
 </section>
-
-<section class="social" id="socialLoginForm">
-    <h2>Use another service to log in.</h2>
-    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
-</section>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
