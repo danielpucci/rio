@@ -10,16 +10,16 @@ namespace RIO
         {
             
             //Scripts: VENDOR
-            bundles.Add(new ScriptBundle("~/Bundles/Scripts/Vendor").Include("~/Scripts/Vendor/jquery.*"));
+            bundles.Add(new ScriptBundle("~/Bundles/Scripts/Plugins").Include("~/Content/Scripts/Plugins/jquery.*"));
 
             //Scripts:  Default
-            bundles.Add(new ScriptBundle("~/Bundles/Scripts/Main").Include("~/Scripts/Main.js"));
+            bundles.Add(new ScriptBundle("~/Bundles/Scripts/Main").Include("~/Content/Scripts/main.js"));
 
             //CSS: VENDOR
-            bundles.Add(new StyleBundle("~/Bundles/Styles/Vendor").Include("~/Content/Styles/Bootstrap/style.css"));
+            bundles.Add(new StyleBundle("~/Bundles/Styles/Plugins").Include("~/Content/Styles/Bootstrap/bootstrap.css"));
 
             //CSS: Default
-            bundles.Add(new StyleBundle("~/Bundles/Styles/Main").Include("~/Content/Styles/default.css"));
+            bundles.Add(new StyleBundle("~/Bundles/Styles/Main").Include("~/Content/Styles/main.css"));
            
         }
     }

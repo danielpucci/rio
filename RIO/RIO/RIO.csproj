@@ -200,13 +200,55 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\" />
+    <Folder Include="Content\Scripts\Plugins\" />
     <Folder Include="Content\Styles\Source\" />
-    <Folder Include="Content\Styles\Vendor\" />
-    <Folder Include="Images\" />
-    <Folder Include="Scripts\Vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Styles\Plugins\bootstrap.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\bootstrap.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_alerts.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_badges.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_button-groups.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_buttons.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_carousel.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_close.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_code.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_component-animations.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_dropdowns.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_forms.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_glyphicons.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_grid.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_input-groups.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_jumbotron.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_labels.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_list-group.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_media.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_mixins.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_modals.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_navbar.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_navs.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_normalize.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_pager.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_pagination.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_panels.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_popovers.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_print.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_progress-bars.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_scaffolding.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_tables.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_theme.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_thumbnails.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_tooltip.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_type.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_utilities.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_variables.scss" />
+    <Content Include="Content\Styles\Plugins\bootstrap\_wells.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -165,6 +165,9 @@ App_Data/*.ldf
 # Microsoft Fakes
 FakesAssemblies/
 
+# SASS
+.sass-cache/
+
 # =========================
 # Windows detritus
 # =========================

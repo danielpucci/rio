@@ -7,7 +7,7 @@
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
         <!-- Styles -->
-        @Styles.Render("~/Bundles/Styles/Vendor")
+        @Styles.Render("~/Bundles/Styles/Plugins")
         @Styles.Render("~/Bundles/Styles/Main")
     </head>
     <body>
@@ -22,7 +22,6 @@
                 <ul></ul>
             </div>
         </div>
-
         <!-- Topo da página -->
         <header id="page-header">
             <div class="container">
@@ -40,12 +39,11 @@
         <!-- Rodapé da página -->
         <footer id="page-footer">
             <div class="container">
-
             </div>
         </footer>
 
         <!-- Scripts -->
-        @Scripts.Render("~/Bundles/Scripts/Vendor")
+        @Scripts.Render("~/Bundles/Scripts/Plugins")
         @Scripts.Render("~/Bundles/Scripts/Main")
         @RenderSection("scripts", required: false)
     </body>
