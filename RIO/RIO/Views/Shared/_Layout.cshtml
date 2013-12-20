@@ -1,48 +1,52 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta -->
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!-- Others -->        <title>RIO &raquo; @ViewBag.Title</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
+
+        <!-- Styles -->
+        @Styles.Render("~/Bundles/Styles/Vendor")
+        @Styles.Render("~/Bundles/Styles/Main")
     </head>
     <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
+        <!-- TaskManager: Loading -->
+        <div id="TaskManagerLoading" style="display: none;" class="transition">
+			<div class="task-manager-text">Aguarde...</div>
+			<div class="icon-loading"></div>
+		</div>
+
+        <!-- TaskManager: Erros e avisos -->
+        <div id="TaskManagerError" style="display: none;" class="transition">            <div class="alert alert-error">
+                <ul></ul>
+            </div>
+        </div>
+
+        <!-- Topo da página -->
+        <header id="page-header">
+            <div class="container">
+                
             </div>
         </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
+
+        <!-- Corpo da página -->
+        <main id="page-content">
+            <div class="page-container">
                 @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
+            </div>
+        </main>
+
+        <!-- Rodapé da página -->
+        <footer id="page-footer">
+            <div class="container">
+
             </div>
         </footer>
 
-        @Scripts.Render("~/bundles/jquery")
+        <!-- Scripts -->
+        @Scripts.Render("~/Bundles/Scripts/Vendor")
+        @Scripts.Render("~/Bundles/Scripts/Main")
         @RenderSection("scripts", required: false)
     </body>
 </html>

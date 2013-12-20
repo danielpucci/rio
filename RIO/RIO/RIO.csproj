@@ -200,9 +200,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\" />
+    <Folder Include="Content\Styles\Source\" />
+    <Folder Include="Content\Styles\Vendor\" />
     <Folder Include="Images\" />
-    <Folder Include="Scripts\" />
+    <Folder Include="Scripts\Vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
