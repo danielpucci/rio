@@ -7540,14 +7540,20 @@ html {
 }
 
 /* line 22, Source/Main.sass */
+#page-content {
+  margin-top: 50px;
+}
+
+/* line 25, Source/Main.sass */
 .big-header {
   background-size: cover;
+  margin: 0 0 20px 0;
   position: relative;
   width: 100%;
   height: 150px;
   color: white;
 }
-/* line 29, Source/Main.sass */
+/* line 33, Source/Main.sass */
 .big-header:after {
   -webkit-box-shadow: 0px 0px 12px 15px white;
   box-shadow: 0px 0px 12px 15px white;
@@ -7558,45 +7564,45 @@ html {
   bottom: 1px;
   display: block;
 }
-/* line 38, Source/Main.sass */
+/* line 42, Source/Main.sass */
 .big-header .container {
   height: 100%;
   position: relative;
 }
-/* line 42, Source/Main.sass */
+/* line 46, Source/Main.sass */
 .big-header h1 {
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 20px;
   left: 20px;
 }
-/* line 48, Source/Main.sass */
+/* line 52, Source/Main.sass */
 .big-header h1 small {
   color: white;
 }
 
-/* line 54, Source/Main.sass */
+/* line 58, Source/Main.sass */
 #page-login {
   background: url("../Images/Backgrounds/login-photo.jpg") no-repeat center center;
   background-size: cover;
 }
-/* line 58, Source/Main.sass */
+/* line 62, Source/Main.sass */
 #page-login #page-footer,
 #page-login #page-header {
   display: none;
 }
-/* line 62, Source/Main.sass */
+/* line 66, Source/Main.sass */
 #page-login .login-logo {
   width: 100%;
   text-align: center;
   margin: 4% 0 0 0;
 }
-/* line 67, Source/Main.sass */
+/* line 71, Source/Main.sass */
 #page-login .login-logo img {
   max-width: 294px;
   width: 60%;
 }
-/* line 71, Source/Main.sass */
+/* line 75, Source/Main.sass */
 #page-login .login-form {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
@@ -7609,35 +7615,35 @@ html {
   max-width: 370px;
   float: none;
 }
-/* line 80, Source/Main.sass */
+/* line 84, Source/Main.sass */
 #page-login .login-form .input-group {
   margin-bottom: 10px;
 }
 
-/* line 87, Source/Main.sass */
+/* line 91, Source/Main.sass */
 #page-timesheet .big-header {
   background: url("../Images/Backgrounds/copacabana.jpg") no-repeat center center;
 }
-/* line 92, Source/Main.sass */
+/* line 96, Source/Main.sass */
 #page-timesheet table thead th {
   text-align: center;
 }
-/* line 95, Source/Main.sass */
+/* line 99, Source/Main.sass */
 #page-timesheet table thead th small {
   display: block;
 }
-/* line 98, Source/Main.sass */
+/* line 102, Source/Main.sass */
 #page-timesheet table .td-input-time {
   text-align: center;
 }
-/* line 101, Source/Main.sass */
+/* line 105, Source/Main.sass */
 #page-timesheet table .td-input-time input {
   display: inline-block;
   width: 100%;
   max-width: 60px;
   text-align: center;
 }
-/* line 109, Source/Main.sass */
+/* line 113, Source/Main.sass */
 #page-timesheet table.table-projects thead th {
   text-align: left;
 }
