@@ -9,8 +9,10 @@ namespace RIO
         public static void RegisterBundles(BundleCollection bundles)
         {
             
-            //Scripts: VENDOR
-            bundles.Add(new ScriptBundle("~/Bundles/Scripts/Plugins").Include("~/Content/Scripts/Plugins/jquery.*"));
+            //Scripts: Plugins
+            bundles.Add(new ScriptBundle("~/Bundles/Scripts/Plugins")
+                .Include("~/Content/Scripts/Plugins/jquery.js")
+                .Include("~/Content/Scripts/Plugins/bootstrap.js"));
 
             //Scripts:  Default
             bundles.Add(new ScriptBundle("~/Bundles/Scripts/Main").Include("~/Content/Scripts/main.js"));

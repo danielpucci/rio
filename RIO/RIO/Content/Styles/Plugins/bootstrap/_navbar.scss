@@ -279,6 +279,15 @@
   }
   .navbar-right {
     float: right !important;
+    
+    > li.fix-photo-perfil{
+      margin: 5px;
+    }
+
+    > li.fix-perfil-config{
+      height: 49px;
+    }
+
   }
 }
 

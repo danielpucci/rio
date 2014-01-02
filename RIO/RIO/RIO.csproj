@@ -178,8 +178,7 @@
     <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\Backgrounds\login-photo.jpg" />
     <Content Include="Content\Images\rio-logo-white.png" />
-    <Content Include="Content\Scripts\bootstrap.js" />
-    <Content Include="Content\Styles\Login.css" />
+    <Content Include="Content\Scripts\Plugins\jquery.js" />
     <Content Include="Content\Styles\Main.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -216,7 +215,6 @@
     <Folder Include="Areas\TimeSheet\Controllers\" />
     <Folder Include="Areas\TimeSheet\Models\" />
     <Folder Include="Areas\TimeSheet\Views\Shared\" />
-    <Folder Include="Content\Scripts\Plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -275,9 +273,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\Styles\Source\Login.sass" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
