@@ -173,6 +173,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\mini-logo.png" />
+    <Content Include="Content\Scripts\Plugins\bootstrap.js" />
     <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\Backgrounds\login-photo.jpg" />
     <Content Include="Content\Images\rio-logo-white.png" />
