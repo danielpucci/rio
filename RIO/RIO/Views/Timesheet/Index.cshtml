@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "Copacabana (Timesheet)";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.PageId = "timesheet";
+}
+
+<div class="big-header">
+    <div class="container">
+        <h1>Copacabana <small>Timesheet</small> </h1>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Timesheet table -->
+    <div class="table-responsive">
+        <table class="table table-hover table-marks table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:20%;"></th>
+                    <th>01/12/2014 <small>Quinta-feira</small></th>
+                    <th>02/12/2014 <small>Sexta-feira</small></th>
+                    <th>03/12/2014 <small>Sábado</small></th>
+                    <th>04/12/2014 <small>Domingo</small></th>
+                    <th>05/12/2014 <small>Segunda-feira</small></th>
+                    <th>06/12/2014 <small>Terça-feira</small></th>
+                    <th>07/12/2014 <small>Quarta-feira</small></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Marcação do ponto -->
+                <tr>
+                    <th>Entrada</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+                <tr>
+                    <th>Saída para almoço</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+                <tr>
+                    <th>Retorno do almoço</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+                <tr>
+                    <th>Saída</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Lista de projetos -->
+        <table class="table table-hover table-projects table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:20%;"> <h4>Projetos</h4> </th>
+                    <th colspan="7"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Projeto Lorem ipsum</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+                <tr>
+                    <th>Projeto Lorem ipsum</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+                <tr>
+                    <th>Projeto Lorem ipsum</th>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                    <td class="td-input-time"> <input type="text" placeholder="00:00" class="input-sm form-control" /> </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
