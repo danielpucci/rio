@@ -173,7 +173,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\mini-logo.png" />
     <Content Include="Content\Scripts\Plugins\bootstrap.js" />
+    <Content Include="Content\Styles\Main.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -209,8 +211,6 @@
     <Folder Include="Areas\TimeSheet\Controllers\" />
     <Folder Include="Areas\TimeSheet\Models\" />
     <Folder Include="Areas\TimeSheet\Views\Shared\" />
-    <Folder Include="Content\Images\" />
-    <Folder Include="Content\Styles\Source\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -263,6 +263,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\BugTracker\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Styles\Source\Main.sass" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
