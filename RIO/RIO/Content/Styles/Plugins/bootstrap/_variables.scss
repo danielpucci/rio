@@ -271,6 +271,9 @@ $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 
+// Size Correction for Logo
+$navbar-padding-logo:              6px;
+
 $navbar-default-color:             #fff !default;
 $navbar-default-bg:                #333 !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;

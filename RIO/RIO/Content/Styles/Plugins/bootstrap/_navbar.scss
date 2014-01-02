@@ -11,8 +11,7 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: $navbar-margin-bottom;
-  border: 1px solid transparent;
+  
 
   // Prevent floats from breaking the navbar
   @include clearfix();
@@ -251,7 +250,7 @@
   // Uncollapse the nav
   @media (min-width: $grid-float-breakpoint) {
     float: left;
-    margin: 0;
+    margin: 0 0 0 15px;
 
     > li {
       float: left;
@@ -386,6 +385,9 @@
 
   .navbar-brand {
     color: $navbar-default-brand-color;
+// Size Correction for Logo
+    padding: $navbar-padding-logo;    
+
     &:hover,
     &:focus {
       color: $navbar-default-brand-hover-color;
