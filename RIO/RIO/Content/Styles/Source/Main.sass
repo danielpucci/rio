@@ -13,6 +13,39 @@
 @import compass
 @import ../Plugins/bootstrap
 
-
-//LOREM
 //=========================
+//Genérico
+//=========================
+html
+	height: 100%
+
+//=========================
+//Página Login
+//=========================
+#page-login
+	background: url('../Images/Backgrounds/login-photo.jpg') no-repeat center center
+	background-size: cover
+
+	#page-footer,
+	#page-header
+		display: none
+
+	.login-logo
+		width: 100%
+		text-align: center
+		margin: 4% 0 0 0
+
+		img
+			max-width: 294px
+			width: 60%
+
+
+	.login-form
+		+box-shadow(0px 0px 5px rgba(0,0,0,0.7))
+		+box-sizing(border-box)
+		background: rgba(255, 255, 255, 0.8)
+		margin: 40px auto 0 auto
+		padding: 20px
+		max-width: 370px
+		float: none
+		

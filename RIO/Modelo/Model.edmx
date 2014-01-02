@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RioModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="RioModelStoreContainer">
+          <EntitySet Name="Grupo" EntityType="RioModel.Store.Grupo" store:Type="Tables" Schema="Base" />
+          <EntitySet Name="Projeto" EntityType="RioModel.Store.Projeto" store:Type="Tables" Schema="Base" />
+          <EntitySet Name="StausProjeto" EntityType="RioModel.Store.StausProjeto" store:Type="Tables" Schema="Base" />
+          <EntitySet Name="Usuario" EntityType="RioModel.Store.Usuario" store:Type="Tables" Schema="Base" />
+          <EntitySet Name="Alocacao" EntityType="RioModel.Store.Alocacao" store:Type="Tables" Schema="TimeSheet" />
+          <EntitySet Name="Livro" EntityType="RioModel.Store.Livro" store:Type="Tables" Schema="TimeSheet" />
+        </EntityContainer>
+        <EntityType Name="Grupo">
+          <Key>
+            <PropertyRef Name="IdGrupo" />
+          </Key>
+          <Property Name="IdGrupo" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" />
+          <Property Name="Descricao" Type="text" />
+          <Property Name="FavIcon" Type="image" />
+          <Property Name="DataCadastro" Type="datetime" />
+          <Property Name="DataAlteracao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Projeto">
+          <Key>
+            <PropertyRef Name="IdProjeto" />
+          </Key>
+          <Property Name="IdProjeto" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="500" />
+          <Property Name="Descricao" Type="text" />
+          <Property Name="IdStatus" Type="int" />
+          <Property Name="FavIcon" Type="image" />
+          <Property Name="DataInicio" Type="datetime" />
+          <Property Name="DataFim" Type="datetime" />
+        </EntityType>
+        <EntityType Name="StausProjeto">
+          <Key>
+            <PropertyRef Name="IdStatus" />
+          </Key>
+          <Property Name="IdStatus" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Descricao" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="500" />
+          <Property Name="Foto" Type="image" />
+          <Property Name="Email" Type="varchar" MaxLength="500" />
+          <Property Name="Login" Type="varchar" MaxLength="50" />
+          <Property Name="Senha" Type="varchar" MaxLength="50" />
+          <Property Name="DataCadastro" Type="datetime" />
+          <Property Name="DataAlteracao" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Alocacao">
+          <Key>
+            <PropertyRef Name="IdAlocacao" />
+          </Key>
+          <Property Name="IdAlocacao" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IdProjeto" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IdLivro" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataCadastro" Type="datetime" />
+          <Property Name="DataAlteracao" Type="datetime" />
+          <Property Name="HoraAlocada" Type="int" />
+        </EntityType>
+        <EntityType Name="Livro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IdUsuario" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="HoraEntrada" Type="datetime" />
+          <Property Name="SaidaAlmoco" Type="datetime" />
+          <Property Name="VoltaAlmoco" Type="datetime" />
+          <Property Name="HoraSaida" Type="datetime" />
+          <Property Name="DataCadastro" Type="datetime" />
+          <Property Name="DataAlteracao" Type="datetime" />
+          <Property Name="FlAbonado" Type="bit" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RioModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="RioEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Grupo" EntityType="RioModel.Grupo" />
+          <EntitySet Name="Projeto" EntityType="RioModel.Projeto" />
+          <EntitySet Name="StausProjeto" EntityType="RioModel.StausProjeto" />
+          <EntitySet Name="Usuario" EntityType="RioModel.Usuario" />
+          <EntitySet Name="Alocacao" EntityType="RioModel.Alocacao" />
+          <EntitySet Name="Livro" EntityType="RioModel.Livro" />
+        </EntityContainer>
+        <EntityType Name="Grupo">
+          <Key>
+            <PropertyRef Name="IdGrupo" />
+          </Key>
+          <Property Name="IdGrupo" Type="Guid" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="FavIcon" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DataCadastro" Type="DateTime" Precision="3" />
+          <Property Name="DataAlteracao" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Projeto">
+          <Key>
+            <PropertyRef Name="IdProjeto" />
+          </Key>
+          <Property Name="IdProjeto" Type="Guid" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="IdStatus" Type="Int32" />
+          <Property Name="FavIcon" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DataInicio" Type="DateTime" Precision="3" />
+          <Property Name="DataFim" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StausProjeto">
+          <Key>
+            <PropertyRef Name="IdStatus" />
+          </Key>
+          <Property Name="IdStatus" Type="Guid" Nullable="false" />
+          <Property Name="Descricao" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="Guid" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Login" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Senha" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DataCadastro" Type="DateTime" Precision="3" />
+          <Property Name="DataAlteracao" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Alocacao">
+          <Key>
+            <PropertyRef Name="IdAlocacao" />
+          </Key>
+          <Property Name="IdAlocacao" Type="Guid" Nullable="false" />
+          <Property Name="IdProjeto" Type="Guid" Nullable="false" />
+          <Property Name="IdLivro" Type="Guid" Nullable="false" />
+          <Property Name="DataCadastro" Type="DateTime" Precision="3" />
+          <Property Name="DataAlteracao" Type="DateTime" Precision="3" />
+          <Property Name="HoraAlocada" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Livro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IdUsuario" Type="Guid" Nullable="false" />
+          <Property Name="HoraEntrada" Type="DateTime" Precision="3" />
+          <Property Name="SaidaAlmoco" Type="DateTime" Precision="3" />
+          <Property Name="VoltaAlmoco" Type="DateTime" Precision="3" />
+          <Property Name="HoraSaida" Type="DateTime" Precision="3" />
+          <Property Name="DataCadastro" Type="DateTime" Precision="3" />
+          <Property Name="DataAlteracao" Type="DateTime" Precision="3" />
+          <Property Name="FlAbonado" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RioModelStoreContainer" CdmEntityContainer="RioEntities">
+          <EntitySetMapping Name="Grupo">
+            <EntityTypeMapping TypeName="RioModel.Grupo">
+              <MappingFragment StoreEntitySet="Grupo">
+                <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="FavIcon" ColumnName="FavIcon" />
+                <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+                <ScalarProperty Name="DataAlteracao" ColumnName="DataAlteracao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projeto">
+            <EntityTypeMapping TypeName="RioModel.Projeto">
+              <MappingFragment StoreEntitySet="Projeto">
+                <ScalarProperty Name="IdProjeto" ColumnName="IdProjeto" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+                <ScalarProperty Name="FavIcon" ColumnName="FavIcon" />
+                <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+                <ScalarProperty Name="DataFim" ColumnName="DataFim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StausProjeto">
+            <EntityTypeMapping TypeName="RioModel.StausProjeto">
+              <MappingFragment StoreEntitySet="StausProjeto">
+                <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="RioModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Senha" ColumnName="Senha" />
+                <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+                <ScalarProperty Name="DataAlteracao" ColumnName="DataAlteracao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Alocacao">
+            <EntityTypeMapping TypeName="RioModel.Alocacao">
+              <MappingFragment StoreEntitySet="Alocacao">
+                <ScalarProperty Name="IdAlocacao" ColumnName="IdAlocacao" />
+                <ScalarProperty Name="IdProjeto" ColumnName="IdProjeto" />
+                <ScalarProperty Name="IdLivro" ColumnName="IdLivro" />
+                <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+                <ScalarProperty Name="DataAlteracao" ColumnName="DataAlteracao" />
+                <ScalarProperty Name="HoraAlocada" ColumnName="HoraAlocada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Livro">
+            <EntityTypeMapping TypeName="RioModel.Livro">
+              <MappingFragment StoreEntitySet="Livro">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="HoraEntrada" ColumnName="HoraEntrada" />
+                <ScalarProperty Name="SaidaAlmoco" ColumnName="SaidaAlmoco" />
+                <ScalarProperty Name="VoltaAlmoco" ColumnName="VoltaAlmoco" />
+                <ScalarProperty Name="HoraSaida" ColumnName="HoraSaida" />
+                <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+                <ScalarProperty Name="DataAlteracao" ColumnName="DataAlteracao" />
+                <ScalarProperty Name="FlAbonado" ColumnName="FlAbonado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

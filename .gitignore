@@ -16,6 +16,7 @@ bld/
 [Mm]inified/
 [Bb]in/
 [Oo]bj/
+[Aa]pp_Data/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/

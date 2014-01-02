@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
@@ -100,3 +101,61 @@
         @RenderSection("scripts", required: false)
     </body>
 </html>
+=======
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Others -->
+        <title>RIO &raquo; @ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <!-- Styles -->
+        @Styles.Render("~/Bundles/Styles/Plugins")
+        @Styles.Render("~/Bundles/Styles/Main")
+    </head>
+    <body id="page-@ViewBag.PageId">
+        <!-- TaskManager: Loading -->
+        <div id="TaskManagerLoading" style="display: none;" class="transition">
+			<div class="task-manager-text">Aguarde...</div>
+			<div class="icon-loading"></div>
+		</div>
+
+
+        <!-- TaskManager: Erros e avisos -->
+        <div id="TaskManagerError" style="display: none;" class="transition">
+            <div class="alert alert-error">
+                <ul></ul>
+            </div>
+        </div>
+
+        <!-- Topo da página -->
+        <header id="page-header">
+            <div class="container">
+                
+            </div>
+        </header>
+
+        <!-- Corpo da página -->
+        <main id="page-content">
+            <div class="page-container">
+                @RenderBody()
+            </div>
+        </main>
+
+        <!-- Rodapé da página -->
+        <footer id="page-footer">
+            <div class="container">
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        @Scripts.Render("~/Bundles/Scripts/Plugins")
+        @Scripts.Render("~/Bundles/Scripts/Main")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
+>>>>>>> a51ab2cc3fd1d2ebb577d6f254024de07bac864c
