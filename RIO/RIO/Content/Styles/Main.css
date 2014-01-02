@@ -7561,7 +7561,7 @@ html {
   max-width: 294px;
   width: 60%;
 }
-/* line 43, Source/Main.sass */
+/* line 42, Source/Main.sass */
 #page-login .login-form {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
@@ -7573,4 +7573,8 @@ html {
   padding: 20px;
   max-width: 370px;
   float: none;
+}
+/* line 51, Source/Main.sass */
+#page-login .login-form .input-group {
+  margin-bottom: 10px;
 }
