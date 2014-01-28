@@ -12,6 +12,8 @@ namespace RIO
             //Scripts: Plugins
             bundles.Add(new ScriptBundle("~/Bundles/Scripts/Plugins")
                 .Include("~/Content/Scripts/Plugins/jquery.js")
+                .Include("~/Content/Scripts/Plugins/jquery.mask.js")
+                .Include("~/Content/Scripts/Plugins/moment-with-langs.min.js")
                 .Include("~/Content/Scripts/Plugins/bootstrap.js"));
 
             //Scripts:  Default
