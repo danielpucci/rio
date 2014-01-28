@@ -180,6 +180,8 @@
     <Content Include="Content\Images\Backgrounds\login-photo.jpg" />
     <Content Include="Content\Images\rio-logo-white.png" />
     <Content Include="Content\Scripts\Plugins\jquery.js" />
+    <Content Include="Content\Scripts\Plugins\jquery.mask.min.js" />
+    <Content Include="Content\Scripts\Timesheet\Index.js" />
     <Content Include="Content\Styles\Main.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
